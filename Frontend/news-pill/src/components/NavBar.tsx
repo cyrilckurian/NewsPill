@@ -1,18 +1,20 @@
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
-export default function NavBar() {
+function NavBar() {
+  const brandStyle = {
+    textDecoration: 'none',
+    color: 'inherit', 
+  };
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          NewsPill
-        </Link>
-        <Link to="/signup">
-        <button type="button" className="btn btn-primary">
-          Log In / Sign Up
-        </button>
-        </Link>
-      </div>
-    </nav>
+    <Navbar bg="dark" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand >
+          <Link to="/" style={brandStyle}>NewsPill</Link>
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
   );
 }
+export default NavBar;

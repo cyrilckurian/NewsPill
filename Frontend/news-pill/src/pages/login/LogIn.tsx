@@ -1,27 +1,19 @@
-import "./SignUp.css";
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function SignUp() {
+function LogIn() {
   return (
     <div>
       <Container>
         <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
-            <div className="border border-2 border-primary"></div>
-            <Card className="shadow px-4">
+            <div className="border border-3 border-primary"></div>
+            <Card className="shadow">
               <Card.Body>
                 <div className="mb-3 mt-md-4">
-                  <h2 className="fw-bold mb-2 text-center text-uppercase ">
-                    NewsPill
-                  </h2>
+                  <h2 className="fw-bold mb-2 text-uppercase text-center">NewsPill</h2>
                   <div className="mb-3">
                     <Form>
-                      <Form.Group className="mb-3" controlId="Name">
-                        <Form.Label className="text-center">Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Name" />
-                      </Form.Group>
-
                       <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label className="text-center">
                           Email address
@@ -38,26 +30,25 @@ function SignUp() {
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
-                        controlId="formBasicPassword"
-                      >
-                        <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                      </Form.Group>
-                      <Form.Group
-                        className="mb-3"
                         controlId="formBasicCheckbox"
-                      ></Form.Group>
+                      >
+                        <p className="small">
+                          <a className="text-primary" href="#!">
+                            Forgot password?
+                          </a>
+                        </p>
+                      </Form.Group>
                       <div className="d-grid">
                         <Button variant="primary" type="submit">
-                          Create Account
+                          Login
                         </Button>
                       </div>
                     </Form>
                     <div className="mt-3">
                       <p className="mb-0  text-center">
-                        Already have an account??{" "}
-                        <Link to="/login" className="text-primary fw-bold">
-                          Sign In
+                        Don't have an account?{" "}
+                        <Link to="/signup" className="text-primary fw-bold">
+                          Sign Up
                         </Link>
                       </p>
                     </div>
@@ -72,4 +63,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default LogIn;
