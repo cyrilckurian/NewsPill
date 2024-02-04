@@ -8,6 +8,8 @@ const AuthRoute = require('./Routes/Auth.route')
 
 const app = express()
 app.use(morgan('dev'))
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 
 app.get('/',async(req, res, next) => {
@@ -25,7 +27,7 @@ app.use(async(req, res, next) => {
 })
 
 app.use((err,req, res, next) => {
-	res.status = (err.status || 500)
+	res.status(err.status || 500)
 	res.send({
 		error : {
 			status: err.status || 500,
