@@ -3,6 +3,8 @@ const morgan = require('morgan')
 const createError = require('http-errors')
 require('dotenv').config()
 require('./helpers/inti_mongodb')
+const {verifyAccessToken} = require('./helpers/jwt_helper')
+require('./helpers/init_redis')
 
 const AuthRoute = require('./Routes/Auth.route')
 
@@ -12,7 +14,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 
-app.get('/',async(req, res, next) => {
+app.get('/',verifyAccessToken,async(req, res, next) => {
+	//console.log(req.headers['authorization'])
 	res.send("Hello from express")
 })
 
