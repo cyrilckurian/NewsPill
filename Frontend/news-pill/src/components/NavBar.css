@@ -9,7 +9,7 @@ li {
 }
 
 .link:hover {
-    color: orange;
+    color: lightblue;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
 }
 
 .title:hover {
-    color: orange;
+    color: lightblue;
 }
 
 .navbar {
@@ -42,7 +42,7 @@ header {
 }
 
 .action_btn {
-    background-color: orange;
+    background-color: blue;
     color: white;
     padding: 0.5rem 1rem;
     border: none;

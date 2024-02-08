@@ -5,7 +5,9 @@ function NavBar() {
   return (
     <header className="header">
       <div className="navbar">
-        <Link className="title link" to="/">NEWSPILL</Link>
+        <Link className="title link" to="/">
+          NEWSPILL
+        </Link>
 
         <ul className="links">
           <li>

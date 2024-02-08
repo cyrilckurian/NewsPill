@@ -19,7 +19,7 @@ function LogIn() {
 
           <div className="remember-forgot">
             <label>
-              <input type="checkbox"> Remember me</input>
+              <input type="checkbox" /> Remember me
             </label>
           </div>
           <button type="submit" className="btn">
@@ -28,7 +28,7 @@ function LogIn() {
 
           <div className="register-link">
             <p>
-              Don't have an account? <Link to="/signup">Register</Link>
+              Don't have an account? <Link to="/signup" className="signup-link">Register</Link>
             </p>
           </div>
         </form>
