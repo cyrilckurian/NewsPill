@@ -1,12 +1,12 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDcxNDU0NjksImV4cCI6MTcwNzE0NTQ4NCwiYXVkIjoiNjViZjc3M2UxNzVjYmYwNWVlYzc3ZjZiIiwiaXNzIjoibmV3c3BpbGwuYWkifQ.Pk3exC3o8mEmv75E01tFTwnwjYRI0ilZ92bebF0xkKw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDczODA5NjAsImV4cCI6MTcwNzM4MTMyMCwiYXVkIjoiNjVjNDkwZTA5NzgxNjc0MGFjOGI3MWZkIiwiaXNzIjoibmV3c3BpbGwuYWkifQ.UZIAesNo63ax6jVAy65PYzyq2LnG-RSLm5fFTlQtwPU
 
 ### Login Route 
 POST  http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-	"email": "dsf78fdtruly1234@gmail.com",
+	"email": "dsf78fdtruly123@gmail.com",
 	"password": "1234"
 }
 
@@ -15,7 +15,7 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-	"email": "dsf78fdtruly1234@gmail.com",
+	"email": "dsf78fdtruly123@gmail.com",
 	"password": "1234"
 }
 
@@ -24,7 +24,7 @@ POST http://localhost:3000/auth/refresh-token
 Content-Type: application/json
 
 {
-	"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDcxNDU0NjksImV4cCI6MTczODcwMzA2OSwiYXVkIjoiNjViZjc3M2UxNzVjYmYwNWVlYzc3ZjZiIiwiaXNzIjoibmV3c3BpbGwuYWkifQ.ijKN7by0bA8ZaelVX3Fn1soV1Hz4zBGsInnD4yxOoww"
+	"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDczODEwMTEsImV4cCI6MTczODkzODYxMSwiYXVkIjoiNjVjNDkwZTA5NzgxNjc0MGFjOGI3MWZkIiwiaXNzIjoibmV3c3BpbGwuYWkifQ.FSuEFZIpTM7r-GUxKo28RgO4wXRlDSfmVgz8DhcYn-s"
 
 }
 
@@ -34,5 +34,5 @@ DELETE http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
-	"refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDcxNDU0OTUsImV4cCI6MTczODcwMzA5NSwiYXVkIjoiNjViZjc3M2UxNzVjYmYwNWVlYzc3ZjZiIiwiaXNzIjoibmV3c3BpbGwuYWkifQ.pJj6nNIZ3famZV_mP0xTthRQuAdJ1C_3gO_3Uiaslak"
+	"refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDczODE2OTUsImV4cCI6MTczODkzOTI5NSwiYXVkIjoiNjVjNDkzYmY5NzgxNjc0MGFjOGI3MjA0IiwiaXNzIjoibmV3c3BpbGwuYWkifQ.Ztu0jVQQ329BRDXhzOLRMh7mpgKVtWF1BWz34ESlrG8"
 }

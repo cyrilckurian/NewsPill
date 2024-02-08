@@ -9,7 +9,7 @@ module.exports = {
 			const payload = {}
 			const secret = process.env.ACCESS_TOKEN_SECRET
 			const options = {
-				expiresIn: '15s',
+				expiresIn: '5m',
 				issuer: 'newspill.ai',
 				audience: userId,
 			}
