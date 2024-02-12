@@ -7,6 +7,7 @@ const {verifyAccessToken} = require('./helpers/jwt_helper')
 require('./helpers/init_redis')
 
 const AuthRoute = require('./Routes/Auth.route')
+const Newsroute = require('./Routes/news')
 
 const app = express()
 app.use(morgan('dev'))
@@ -18,6 +19,10 @@ app.get('/',verifyAccessToken,async(req, res, next) => {
 	//console.log(req.headers['authorization'])
 	res.send("Hello from express")
 })
+
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/news', Newsroute)
 
 app.use('/auth', AuthRoute)
 

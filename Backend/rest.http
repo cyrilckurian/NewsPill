@@ -36,3 +36,7 @@ Content-Type: application/json
 {
 	"refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDczODE2OTUsImV4cCI6MTczODkzOTI5NSwiYXVkIjoiNjVjNDkzYmY5NzgxNjc0MGFjOGI3MjA0IiwiaXNzIjoibmV3c3BpbGwuYWkifQ.Ztu0jVQQ329BRDXhzOLRMh7mpgKVtWF1BWz34ESlrG8"
 }
+
+### News api
+GET http://localhost:3000/news
+
