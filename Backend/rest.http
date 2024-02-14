@@ -40,3 +40,6 @@ Content-Type: application/json
 ### News api
 GET http://localhost:3000/news
 
+
+### ChatGPT 
+GET http://localhost:3000/chatgpt
